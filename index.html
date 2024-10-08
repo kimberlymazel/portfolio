@@ -2,59 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>A simple Three.JS App</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Kimberly Mazel's Portfolio</title>
+      <link rel="stylesheet" href="styles/main.css" />
+      <link rel="stylesheet" href="styles/card.css" />
   </head>
   <body>
-    <header>
-    </header>    
-
     <main>
-      <div class="title">
-      </div>
+      <div id="container3D"></div>
+      <div class="floating-cards">
 
-      <div class="aboutme">
-      </div>
-
-      <div class="projects">
-        <div id="container3D"></div>
-        <div class="floating-cards">
-          <a href="https://github.com/yourusername/repo1" class="card" style="top: 20%; left: 18%;" target="_blank">
-            <h3>fitflow</h3>
-            <p>A fitness web-app project created through ReactJS.</p>
-            <span class="status">Group (Frontend)</span>
-          </a>
-        
-          <a href="https://github.com/yourusername/repo2" class="card" style="top: 72%; left: 39.5%;" target="_blank">
-            <h3>VanGo Art Scanner</h3>
-            <p>Java project that scans artworks and returns information on them.</p>
-            <span class="status">Group</span>
-          </a>
-        
-          <a href="https://github.com/yourusername/repo3" class="card" style="top: 50%; right: 15%;" target="_blank">
-            <h3>Coral Reef Bleaching Prediction</h3>
-            <p>A data science project where we used machine learning models to predict coral reef bleaching.</p>
-            <span class="status">Group</span>
-          </a>
-        
-          <a href="https://github.com/yourusername/repo4" class="card" style="top: 20%; right: 18%;" target="_blank">
-            <h3>Comparing Compression Algorithms</h3>
-            <p>A comparative study on data compression algorithms.</p>
-            <span class="status">Group</span>
-          </a>
-        
-          <a href="https://github.com/yourusername/repo5" class="card" style="top: 50%; left: 15%;" target="_blank">
-            <h3>Python Financial Generator</h3>
-            <p>My first ever python project, a financial generator through the terminal.</p>
-            <span class="status individual">Individual</span>
-          </a>
+        <!-- TOP LEFT -->
+        <div class="card" style="top: 10%; left: 18%;">
+          <div class="card-inner">
+            <div class="card-front">
+            </div>
+            <div class="card-back">
+                <h1>About Me</h1>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!-- BOTTOM LEFT -->
+        <div class="card" style="top: 45%; left: 15%;">
+          <div class="card-inner">
+            <div class="card-front">
+            </div>
+            <div class="card-back">
+                <h1>My Skills</h1>
+            </div>
+          </div>
+        </div>
       
-      <div class="contact">
+        <!-- MIDDLE -->
+        <div class="card" style="top: 70%; left: 50%; transform: translateX(-50%);">
+          <div class="card-inner">
+            <div class="card-front">
+            </div>
+            <div class="card-back">
+                <h1>Contact Me</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP RIGHT -->
+        <div class="card" style="top: 10%; right: 18%;">
+          <div class="card-inner">
+            <div class="card-front">
+            </div>
+            <div class="card-back">
+                <h1>My Projects</h1>
+            </div>
+          </div>
+        </div>
+      
+        <!-- BOTTOM RIGHT -->
+        <div class="card" style="top: 45%; right: 15%;">
+          <div class="card-inner">
+            <div class="card-front">
+            </div>
+            <div class="card-back">
+                <h1>My Publications</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="javascript/main.js"></script>
   </body>
 </html>
